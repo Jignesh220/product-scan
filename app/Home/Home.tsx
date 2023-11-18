@@ -66,7 +66,7 @@ export default function Home() {
           Welcome to Product Scan
         </div>
         {ProductData.map((item) => (
-          <table className="w-full mt-16 divide-y-2 divide-gray-200 bg-gray-200 rounded-3xl p-2 text-sm table-auto max-w-full">
+          <table key={item.id} className="w-full mt-16 divide-y-2 divide-gray-200 bg-gray-200 rounded-3xl p-2 text-sm table-auto max-w-full">
             <thead className="ltr:text-left rtl:text-right bg-gray-400">
               <tr className="bg-slate-200text-xl">
                 <th className="whitespace-normal text-xl px-4 py-2 font-bold text-black">
